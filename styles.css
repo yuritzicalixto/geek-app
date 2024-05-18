@@ -7,9 +7,11 @@
     --text: #EDEDED;
     --secondary:#008287;
     --block:#00ABF0;
-    --sm:14px;
-    --md:16px;
-    --lg:20px;
+
+    --producto:15px;
+    --formulario:16px;
+    --boton:20px;
+    --titulo:24px;
 }
 
 *{
@@ -18,10 +20,158 @@
 }
 
 /*
+titulos -> Press Start 2P
+font-family: "Press Start 2P", system-ui;
+
+texto secundario -> IBM Plex Mono
+font-family: "IBM Plex Mono", monospace;
+
+
 font-family: "Lato", sans-serif;
 */
 
 body{
     background-color: var(--primary);
-    font-family: "M PLUS 1 Code", monospace;
+    font-family: "IBM Plex Mono", monospace;
 }
+
+/*------------------------*/
+/*--------START NAV----------*/
+/*------------------------*/
+.main-nav{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    padding: 0 25px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nav-logo img{
+    width: 20px;
+    height: 20px;
+}
+.nav-title h1{
+    padding-left: 10px;
+    font-size: var(--titulo);
+    color: var(--text);
+    font-family: "Press Start 2P", system-ui;
+}
+/*----------------------*/
+/*--------END NAV----------*/
+/*----------------------*/
+
+
+/*------------------------*/
+/*--------START MAIN----------*/
+/*------------------------*/
+.main-container{
+    display: flex;
+    justify-content: space-between;
+}
+/*----------------------*/
+/*--------END MAIN----------*/
+/*----------------------*/
+
+
+/*------------------------*/
+/*--------START PRODUCTOS----------*/
+/*------------------------*/
+.cards-main{
+    margin: 10px 30px 0 30px;
+}
+
+.cards-main h1{
+    color: var(--text);
+    font-size: var(--titulo);
+    font-family: "Press Start 2P", system-ui;
+}
+
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 140px);/*Se llenara automaticamente de las columnas del mismo tamaño que quepan*/
+    gap: 26px;
+    place-content: center;
+}
+
+.product-card{
+    width: 140px;
+}
+.product-card img{
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    object-fit: cover;/*La img tendra su tamaño original, independientemente del with y height*/
+}
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+  }
+.product-info p{
+    color: var(--text);
+}  
+  .product-info figure {
+    margin: 0;
+  }
+  .product-info figure img {
+    width: 35px;
+    height: 35px;
+  }
+  .product-info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+  .product-info div p:nth-child(2) {
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--text);
+  }
+/*----------------------*/
+/*--------END PRODUCTOS----------*/
+/*----------------------*/
+
+
+/*------------------------*/
+/*--------START FORMULARIO----------*/
+/*------------------------*/
+.formulario-main h1{
+    color: var(--text);
+    font-size: var(--titulo);
+    font-family: "Press Start 2P", system-ui;
+}
+/*----------------------*/
+/*--------END FORMULARIO----------*/
+/*----------------------*/
+
+
+/*------------------------*/
+/*--------START FOOTER----------*/
+/*------------------------*/
+.footer-main {
+    display: flex;
+    bottom:0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    padding: 0 25px;
+    align-items: center;
+}
+
+.footer-logo img{
+    width: 20px;
+    height: 20px;
+}
+/*----------------------*/
+/*--------END FOOTER----------*/
+/*----------------------*/
