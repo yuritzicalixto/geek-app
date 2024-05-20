@@ -43,7 +43,6 @@ body{
     justify-content: center;
     height: 100px;
     width: 100%;
-    padding: 0 25px;
     align-items: center;
     margin-bottom: 10px;
 }
@@ -68,7 +67,6 @@ body{
 /*------------------------*/
 .main-container{
     display: flex;
-    justify-content: space-between;
 }
 /*----------------------*/
 /*--------END MAIN----------*/
@@ -79,13 +77,15 @@ body{
 /*--------START PRODUCTOS----------*/
 /*------------------------*/
 .cards-main{
-    margin: 10px 30px 0 30px;
+    margin: 15px;
+    width: 100%;
 }
 
 .cards-main h1{
     color: var(--text);
     font-size: var(--titulo);
     font-family: "Press Start 2P", system-ui;
+    text-align: center;
 }
 
 
@@ -141,10 +141,105 @@ body{
 /*------------------------*/
 /*--------START FORMULARIO----------*/
 /*------------------------*/
+.formulario-main{
+    width: 100%;
+    margin: 20px;
+}
 .formulario-main h1{
     color: var(--text);
     font-size: var(--titulo);
     font-family: "Press Start 2P", system-ui;
+    text-align: center;
+}
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;    
+}
+.form div{
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: var(--formulario);
+    color: var(--block);
+    font-weight: bold; /*Grosor de la fuente*/
+    margin-bottom: 4px;
+}
+.input{
+    background-color: var(--text);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+}
+.input-name,
+.input-email,
+.input-password{
+    margin-bottom: 22px;
+} 
+/*Sign Up*/
+.input-email{
+    margin-bottom: 22px;
+}
+.primary-button{
+    background-color: #10D0F2;
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;/*Sea del tamaño completo*/
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+.secondary-button{
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid #10D0F2;
+    color: #10D0F2;
+    width: 100%;/*Sea del tamaño completo*/
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+
+
+/* Ocultar el input de archivo original */
+input[type="file"] {
+    display: none;
+}
+
+/* Estilo del contenedor personalizado */
+.file-upload-wrapper {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilo del texto que muestra el nombre del archivo */
+.file-name {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+    color: var(--secondary);
+    opacity: 0.5;
 }
 /*----------------------*/
 /*--------END FORMULARIO----------*/
@@ -156,22 +251,41 @@ body{
 /*------------------------*/
 .footer-main {
     display: flex;
-    bottom:0;
+    justify-content: center;
+    flex-direction: column;
+    height: 180px;
+    width: 100%;
 }
 
 .footer-container {
     display: flex;
     justify-content: center;
-    height: 80px;
-    width: 100%;
-    padding: 0 25px;
     align-items: center;
+    margin-bottom: 10px;
+}
+.footer-title h1{
+    padding-left: 10px;
+    font-size: var(--titulo);
+    color: var(--block);
+    font-family: "Press Start 2P", system-ui;
 }
 
 .footer-logo img{
     width: 20px;
     height: 20px;
 }
+/* .footer-info{
+    justify-content: center;
+} */
+
+.footer-info h2{
+    font-size: var(--sm);
+    text-align: center;
+    color: var(--secondary);
+    opacity: 0.5;
+}
 /*----------------------*/
 /*--------END FOOTER----------*/
 /*----------------------*/
+
+
