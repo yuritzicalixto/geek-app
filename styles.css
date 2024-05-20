@@ -120,6 +120,7 @@ body{
   .product-info figure img {
     width: 35px;
     height: 35px;
+    cursor: pointer;
   }
   .product-info div p:nth-child(1) {
     font-weight: bold;
@@ -288,4 +289,9 @@ input[type="file"] {
 /*--------END FOOTER----------*/
 /*----------------------*/
 
-
+@media (min-width: 374px ) and (max-width: 768px){
+    .main-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    }
