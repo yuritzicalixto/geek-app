@@ -16,7 +16,7 @@
 <!--ENDS FONTS GOOGLE-->
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="./assets/icons/mando.png" type="image/x-icon">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./assets/reset.css">
     <title>Geek</title>
 </head>
 <body>
@@ -37,8 +37,8 @@
 <section class="cards-main">
     <h1>MIS PRODUCTOS</h1>
     <br>
-    <div class="cards-container">
-
+    <div class="cards-container" data-lista="">
+<!--
       <div class="product-card">
         <img src="https://images.pexels.com/photos/210528/pexels-photo-210528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
         <div class="product-info">
@@ -142,6 +142,8 @@
           </figure>
         </div>
       </div>
+-->
+
     </div>
   </section>
 <!-- END CARDS DE PRODUCTOS --> 
@@ -151,31 +153,25 @@
         <section class="formulario-main">
             <h1>AGREGAR PRODUCTO: </h1>
             <br>
-            <form action="/" class="form">
-              <div>
+            <form action="/" class="form" data-formulario>
+              
 
               <label for="name" class="label">Nombre:</label>
-              <input type="text" id="name" placeholder="nombre..." class="input input-email" required>
+              <input type="text" id="name" placeholder="Ingresa el nombre del producto" class="input input-email" data-titulo>
 
               <label for="number" class="label">Precio:</label>
-              <input type="number" id="number" placeholder="$ precio..." class="input input-password" required>
+              <input type="number" id="number" placeholder="Ingresa el precio del producto" class="input input-password" data-precio>
 
-              <!-- <label for="captureImage" class="label">Imagen:</label>
-              <input type="file" id="captureImage" placeholder="imagen..." class="input input-password custom-button" accept="image/*" required> -->
-              <label for="captureImage" class="label">Imagen:</label>
-              <div class="file-upload-wrapper" id="fileUploadWrapper">
-                <span id="fileUploadText">Seleccionar archivo</span>
-                <input type="file" id="captureImage" accept="image/*">
-            </div>
-            <span class="file-name" id="fileName">No se ha seleccionado ningún archivo</span>
+               <label for="imgProducto" class="label">Imagen:</label>
+               <input type="text" id="imgProducto" placeholder="Inserta la URL de la imagen del producto" class="input input-password" data-img >
 
-              </div>
+              
               <br>
               
               <!--Boton-->
               <input type="submit" value="Enviar" class="primary-button login-button">
               <br>
-              <input type="submit" value="Limpiar" class=" secondary-button">
+              <!-- <input type="submit" value="Limpiar" class=" secondary-button"> -->
               
           </form>
         </section>
@@ -199,6 +195,8 @@
             <h2>ALURA LATAM - 2024</h2>
         </div>
     </footer>
-    <script src="./main.js"></script>
+    <!-- <script src="./main.js"></script> -->
+    <script src="./js/mostrarProductos.js" type="module"></script>
+    <script src="./js/crearProducto.js" type="module"></script>
 </body>
 </html>

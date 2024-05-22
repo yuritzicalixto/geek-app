@@ -1,0 +1,58 @@
+{
+  "producto": [
+    {
+      "id": "1",
+      "titulo": "Reloj",
+      "precio": "20",
+      "img": "https://images.pexels.com/photos/210528/pexels-photo-210528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "2",
+      "titulo": "Reloj de Arena",
+      "precio": "15",
+      "img": "https://images.pexels.com/photos/1095601/pexels-photo-1095601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "3",
+      "titulo": "Reloj de mano",
+      "precio": "34",
+      "img": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "4",
+      "titulo": "Mac Book Pro",
+      "precio": "200",
+      "img": "https://images.pexels.com/photos/1113804/pexels-photo-1113804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "5",
+      "titulo": "Monitores",
+      "precio": "239",
+      "img": "https://images.pexels.com/photos/4665064/pexels-photo-4665064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "6",
+      "titulo": "Camara Vintage",
+      "precio": "80",
+      "img": "https://images.pexels.com/photos/6175584/pexels-photo-6175584.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "7",
+      "titulo": "Camara FED 3",
+      "precio": "99",
+      "img": "https://images.pexels.com/photos/3905450/pexels-photo-3905450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "8",
+      "titulo": "Mesa",
+      "precio": "56",
+      "img": "https://images.pexels.com/photos/1028444/pexels-photo-1028444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "56d0",
+      "titulo": "Funko",
+      "precio": "95",
+      "img": "https://www.pexels.com/es-es/foto/foto-de-primer-plano-de-la-figura-de-personaje-skylander-blanco-y-marron-699739/"
+    }
+  ]
+}
